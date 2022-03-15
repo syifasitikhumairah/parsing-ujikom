@@ -1,0 +1,41 @@
+{
+    "name": "Syifa Siti Khumairah",
+    "age": 17,
+    "gender": "Female",
+    "hobi": [
+        "Membaca",
+        "Memasak",
+        "Mendengar musik"
+    ],
+    "github": {
+        "username": "syifasitikhumairah",
+        "repository": 14
+    },
+    "articles": [
+        {
+            "id": 1,
+            "title": "Flutter: Introduction",
+            "subtitle": "Beutiful native apps with Dart language"
+        },
+        {
+            "id": 2,
+            "title": "Flutter: LinearLayout",
+            "subtitle": "How to design LinearLayout in Flutter"
+        },
+        {
+            "id": 3,
+            "title": "Flutter:RelativeLayout",
+            "subtitle": "How to design RelativeLayout in Flutter"
+        }
+    ],
+    "contact": {
+        "1": {
+            "name": "Personal",
+            "phone": "62895631989"
+        },
+        "2": {
+            "name": "Work",
+            "phone": "0225421220"
+        }
+    }
+}

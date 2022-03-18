@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart';
 import 'dart:convert';
+
 import 'package:parsing_ujikom/sample_json.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:parsing_ujikom/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +12,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyHomePage(),
+      home: ProfilePage(),
     );
   }
 }
@@ -23,10 +24,10 @@ class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageStage();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageStage extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> {
   Future _loadSampleJson() async {
     String jsonString = await rootBundle.loadString("assets/sample.json");
     final jsonData = json.decode(jsonString);
